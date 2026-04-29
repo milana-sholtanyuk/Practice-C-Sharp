@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="dop_3.3-5/dop_3.3-5.csproj" Id="3548123f-563e-45a3-bcc5-cf6e612e8fb7" />
+  <Project Path="z1/z1.csproj" Id="8de9c34f-502f-485a-bdca-ca486efe51b8" />
+  <Project Path="z2/z2.csproj" Id="dfba2c4a-526f-4e38-8980-0b6532e899fa" />
+  <Project Path="z3/z3.csproj" Id="372bdc23-32b2-44ec-a325-39cbe927166c" />
+  <Project Path="z4/z4.csproj" Id="885965bd-46bf-4c0a-bbcc-ece60130d915" />
+  <Project Path="z5/z5.csproj" Id="bbbafb0d-92bc-420c-ba2f-e477ee7b9765" />
+  <Project Path="z6/z6.csproj" Id="142cd26b-423f-4c86-ac4c-b91e5a01f724" />
+  <Project Path="z7/z7.csproj" Id="8e16ba5b-f9a1-4a54-a7ae-aec79e08e741" />
+  <Project Path="z8/z8.csproj" Id="5fffcba8-722f-4c5f-be4e-f736485e1619" />
+  <Project Path="z9/z9.csproj" Id="b0e970ef-3dab-496b-809a-c507f7fe2436" />
+</Solution>
