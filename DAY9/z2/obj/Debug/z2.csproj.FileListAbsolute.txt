@@ -1,0 +1,7 @@
+C:\Users\katri\source\repos\DAY9\z2\bin\Debug\z2.exe.config
+C:\Users\katri\source\repos\DAY9\z2\bin\Debug\z2.exe
+C:\Users\katri\source\repos\DAY9\z2\bin\Debug\z2.pdb
+C:\Users\katri\source\repos\DAY9\z2\obj\Debug\z2.csproj.AssemblyReference.cache
+C:\Users\katri\source\repos\DAY9\z2\obj\Debug\z2.csproj.CoreCompileInputs.cache
+C:\Users\katri\source\repos\DAY9\z2\obj\Debug\z2.exe
+C:\Users\katri\source\repos\DAY9\z2\obj\Debug\z2.pdb
