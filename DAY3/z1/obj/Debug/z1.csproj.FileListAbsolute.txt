@@ -1,0 +1,7 @@
+C:\Users\katri\source\repos\DAY3\z1\bin\Debug\z1.exe.config
+C:\Users\katri\source\repos\DAY3\z1\bin\Debug\z1.exe
+C:\Users\katri\source\repos\DAY3\z1\bin\Debug\z1.pdb
+C:\Users\katri\source\repos\DAY3\z1\obj\Debug\z1.csproj.AssemblyReference.cache
+C:\Users\katri\source\repos\DAY3\z1\obj\Debug\z1.csproj.CoreCompileInputs.cache
+C:\Users\katri\source\repos\DAY3\z1\obj\Debug\z1.exe
+C:\Users\katri\source\repos\DAY3\z1\obj\Debug\z1.pdb
