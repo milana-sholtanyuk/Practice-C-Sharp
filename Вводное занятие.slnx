@@ -1,0 +1,10 @@
+<Solution>
+  <Project Path="pr_z1/pr_z1.csproj" Id="7da5b168-9dfd-4d5b-8060-b4a73fdb799c" />
+  <Project Path="pr_z2/pr_z2.csproj" Id="92e63fd3-ba38-41f1-acb9-e10cdce49e28" />
+  <Project Path="pr_z3/pr_z3.csproj" Id="166fffcf-44c8-43f2-96c2-2721328ad79b" />
+  <Project Path="pr_z4/pr_z4.csproj" Id="c309a583-4e16-415b-94f1-8d62c5819381" />
+  <Project Path="v_z1/v_z1.csproj" Id="01653e92-bfe0-4e3d-8d00-9712d08bfd8f" />
+  <Project Path="v_z2/v_z2.csproj" Id="2e7ce938-2a52-4a6f-80ed-90c33239829e" />
+  <Project Path="v_z3/v_z3.csproj" Id="537c5a3d-0af4-413b-8644-5dadf7ba8d85" />
+  <Project Path="z3/z3.csproj" Id="24f02d83-38a0-4345-aef8-873ad63b4f13" />
+</Solution>
