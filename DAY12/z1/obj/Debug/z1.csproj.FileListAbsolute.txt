@@ -1,0 +1,16 @@
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1.csproj.AssemblyReference.cache
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\MainWindow.g.cs
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\App.g.cs
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1_MarkupCompile.cache
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1_MarkupCompile.lref
+C:\Users\katri\source\repos\DAY12\z1\bin\Debug\z1.exe.config
+C:\Users\katri\source\repos\DAY12\z1\bin\Debug\z1.exe
+C:\Users\katri\source\repos\DAY12\z1\bin\Debug\z1.pdb
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\MainWindow.baml
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1.g.resources
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1.Properties.Resources.resources
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1.csproj.GenerateResource.cache
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1.csproj.CoreCompileInputs.cache
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1.exe
+C:\Users\katri\source\repos\DAY12\z1\obj\Debug\z1.pdb
