@@ -1,0 +1,213 @@
+﻿@model IEnumerable<GuestBookApp.Models.GuestEntry>
+
+@{
+    ViewBag.Title = "Книга отзывов";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .guestbook-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .form-section {
+        background: #f5f5f5;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+    .form-control {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    textarea.form-control {
+        height: 100px;
+    }
+
+    .rating-group {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+        .rating-group label {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+
+        .rating-group input[type="radio"] {
+            margin-right: 5px;
+        }
+
+    .btn-submit {
+        background: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-submit:hover {
+            background: #0056b3;
+        }
+
+    .review-item {
+        border-bottom: 1px solid #eee;
+        padding: 15px 0;
+    }
+
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .review-name {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .review-rating {
+        color: #ffc107;
+    }
+
+    .review-date {
+        color: #666;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .review-message {
+        margin-top: 10px;
+        color: #444;
+    }
+
+    .alert-success {
+        background: #d4edda;
+        color: #155724;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .text-danger {
+        color: #dc3545;
+        font-size: 12px;
+        margin-top: 5px;
+        display: block;
+    }
+
+    .empty-message {
+        text-align: center;
+        color: #666;
+        padding: 20px;
+    }
+
+    h2, h3 {
+        color: #333;
+    }
+</style>
+
+<div class="guestbook-container">
+    <h2>Книга отзывов</h2>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert-success">
+            @TempData["SuccessMessage"]
+        </div>
+    }
+
+    <!-- Форма добавления отзыва -->
+    <div class="form-section">
+        <h3>Добавить отзыв</h3>
+
+        @using (Html.BeginForm("AddEntry", "Guest", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-group">
+                <label>Ваше имя</label>
+                @Html.TextBox("Name", null, new { @class = "form-control", placeholder = "Введите ваше имя" })
+                @Html.ValidationMessage("Name", "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label>Текст отзыва</label>
+                @Html.TextArea("Message", null, new { @class = "form-control", placeholder = "Введите ваш отзыв (до 500 символов)" })
+                @Html.ValidationMessage("Message", "", new { @class = "text-danger" })
+            </div>
+
+            <div class="form-group">
+                <label>Рейтинг (1-5)</label>
+                <div class="rating-group">
+                    <label><input type="radio" name="Rating" value="1" /> 1</label>
+                    <label><input type="radio" name="Rating" value="2" /> 2</label>
+                    <label><input type="radio" name="Rating" value="3" /> 3</label>
+                    <label><input type="radio" name="Rating" value="4" /> 4</label>
+                    <label><input type="radio" name="Rating" value="5" /> 5</label>
+                </div>
+                @Html.ValidationMessage("Rating", "", new { @class = "text-danger" })
+            </div>
+
+            <button type="submit" class="btn-submit">Отправить отзыв</button>
+        }
+    </div>
+
+    <!-- Список отзывов -->
+    <div>
+        <h3>Последние отзывы</h3>
+
+        @if (!Model.Any())
+        {
+            <div class="empty-message">
+                Пока нет ни одного отзыва. Будьте первым!
+            </div>
+        }
+        else
+        {
+            foreach (var entry in Model)
+            {
+                <div class="review-item">
+                    <div class="review-header">
+                        <div class="review-name">@entry.Name</div>
+                        <div class="review-rating">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= entry.Rating)
+                                {
+                                    <span>★</span>
+                                }
+                                else
+                                {
+                                    <span>☆</span>
+                                }
+                            }
+                        </div>
+                    </div>
+                    <div class="review-date">@entry.Date.ToString("dd.MM.yyyy HH:mm")</div>
+                    <div class="review-message">@entry.Message</div>
+                </div>
+            }
+        }
+    </div>
+</div>
